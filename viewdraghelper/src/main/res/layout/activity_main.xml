@@ -20,7 +20,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:background="#44ff0000"
-        android:text="I can be dragged !"
+        android:text="i will back to origin pos!"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
 
@@ -29,7 +29,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:background="#44ff0000"
-        android:text="I can be dragged !"
+        android:text="use edge tracker to operate me!"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
 
