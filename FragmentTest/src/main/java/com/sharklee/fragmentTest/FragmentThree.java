@@ -9,27 +9,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Created by Administrator on 2015/10/9.
  */
-public class FragmentOne extends Fragment{
+public class FragmentThree extends Fragment{
 
-    private static final String TAG = "FragmentOne";
+    private static final String TAG = "FragmentThree";
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.i(TAG,"onCreateView");
-        View view = inflater.inflate(R.layout.layout_fragmentone,container,false);
-        view.findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(),"you clicked me",Toast.LENGTH_LONG).show();
-            }
-        });
+        Log.i(TAG, "onCreateView");
+        View view = inflater.inflate(R.layout.layout_fragmentthree,container,false);
         ViewParent parent = view.getParent();
         ViewGroup.LayoutParams lp = view.getLayoutParams();
         return view;
@@ -49,7 +41,7 @@ public class FragmentOne extends Fragment{
 
     @Override
     public void onAttach(Activity activity) {
-        Log.i(TAG, "onAttach");
+        Log.i(TAG,"onAttach");
         super.onAttach(activity);
     }
 

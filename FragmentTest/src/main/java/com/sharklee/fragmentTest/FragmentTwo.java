@@ -22,12 +22,22 @@ public class FragmentTwo extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.i(TAG,"onCreateView");
-        View view = inflater.inflate(R.layout.layout_fragmentone,container,false);
-        TextView textView = (TextView) view.findViewById(R.id.content);
-        textView.setText("fragment two");
+        View view = inflater.inflate(R.layout.layout_fragmenttwo,container,false);
         ViewParent parent = view.getParent();
         ViewGroup.LayoutParams lp = view.getLayoutParams();
         return view;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        Log.i(TAG,"onSaveInstanceState");
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onViewStateRestored(Bundle savedInstanceState) {
+        Log.i(TAG,"onViewStateRestored");
+        super.onViewStateRestored(savedInstanceState);
     }
 
     @Override

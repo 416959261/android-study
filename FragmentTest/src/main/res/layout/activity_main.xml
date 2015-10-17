@@ -2,22 +2,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <fragment
         android:id="@+id/fragmentOne"
         android:layout_width="match_parent"
-        android:layout_height="50dip"
+        android:layout_height="30dip"
         android:name="com.sharklee.fragmentTest.FragmentOne"/>
 
     <FrameLayout
         android:id="@+id/fragmentTwoContainer"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="50dip">
+        android:layout_height="0dip">
     </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip">
+        <Button
+            android:id="@+id/gunlun"
+            android:layout_width="0dip"
+            android:text="滚轮洗衣机"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/putong"
+            android:layout_width="0dip"
+            android:text="普通洗衣机"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
 </LinearLayout>
