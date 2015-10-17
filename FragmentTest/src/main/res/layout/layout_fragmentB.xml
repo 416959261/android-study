@@ -3,24 +3,16 @@
     android:layout_width="match_parent"
     android:background="@android:color/darker_gray"
     android:layout_height="match_parent">
-    <ImageButton
-        android:id="@+id/button"
-        android:layout_centerInParent="true"
-        android:onClick="onClick"
-        android:layout_width="32dip"
-        android:layout_height="32dip"
-        android:layout_marginLeft="5dip"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/ic_launcher"
-        />
-    <TextView
-        android:layout_alignParentRight="true"
-        android:id="@+id/content"
-        android:text="洗衣机"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:gravity="center"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="fragment b"/>
+    <Button
+        android:id="@+id/buttonInFragmentB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Button in fragment b"/>
 
 </RelativeLayout>
