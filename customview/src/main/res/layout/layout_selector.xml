@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click shape to switch shapes"
+        android:gravity="center"/>
+
+    <com.sharklee.customView.ShapeSelectorView
+        android:id="@+id/shapeSelector"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/prompt"
+        android:layout_above="@id/shapeSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shapeColor="#7f0000"
+        app:displayShapeName="true"/>
+
+    <Button
+        android:id="@+id/select"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select"/>
+
+</RelativeLayout>
